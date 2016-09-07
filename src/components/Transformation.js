@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 
 class Transformation extends Component {
   render () {
-    let transformGroup = []
-    for (let i = 0; i < 9; i++) {
-      transformGroup.push(<div className='transform' key={i}><p>CoolEffect</p></div>)
-    }
     return <div className='transformation-container'>
       <h1>SASS Transformation Effects</h1>
       <p>When you click and hold down the mouse button, you can see some animated transformations</p>
@@ -16,9 +12,6 @@ class Transformation extends Component {
             <p className='text'>Well ain't this nifty</p>
           </div>
         </div>
-      </div>
-      <div className='transform-two'>
-        {transformGroup}
       </div>
     </div>
   }
