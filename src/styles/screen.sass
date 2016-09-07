@@ -198,3 +198,47 @@ body
   width: 200px
   height: 100px
   animation: 7s infinite drive
+
+$sprite-size: 125px
+
+.walking-container
+  margin-left: 50px
+  display: flex
+
+  .walking-boy
+    background-image: url('./walk-cycle-boy-hi.png')
+    background-position: top left
+    background-repeat: no-repeat
+    background-size: $sprite-size*4 $sprite-size*2
+    width: $sprite-size*.75
+    height: $sprite-size
+    animation-duration: .65s
+    animation-name: walking
+    animation-iteration-count: infinite
+    animation-timing-function: step-end
+
+@keyframes walking
+  0%
+    background-position-x: 0
+    background-position-y: 0
+    transform: translateX(700%)
+  20%
+    background-position-x: -$sprite-size*.77
+    background-position-y: 0
+    transform: translateX(600%)
+  40%
+    background-position-x: -$sprite-size*1.64
+    background-position-y: 0
+    transform: translateX(500%)
+  60%
+    background-position-x: -$sprite-size*2.35
+    background-position-y: 0
+    transform: translateX(400%)
+  80%
+    background-position-x: -$sprite-size*3.15
+    background-position-y: 0
+    transform: translateX(300%)
+  100%
+    background-position-x: -$sprite-size*3.95
+    background-position-y: 0
+    transform: translateX(200%)

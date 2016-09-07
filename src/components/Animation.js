@@ -10,7 +10,10 @@ class Animation extends Component {
         <div id='ballShadow'></div>
       </div>
       <div className='car-container'>
-        <div className='car'><h2 style={{'color': 'black', 'margin-top': '80px'}}>Watch Me Go!</h2></div>
+        <div className='car'><h2 style={{'color': 'black', 'marginTop': '80px'}}>Watch Me Go!</h2></div>
+      </div>
+      <div className='walking-container'>
+        <div className='walking-boy'></div>
       </div>
     </div>
   }
