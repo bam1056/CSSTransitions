@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DelayedTransitions from './DelayedTransitions'
+import Transitions from './Transitions'
 import Transformation from './Transformation'
 import Animation from './Animation'
 
@@ -7,7 +7,7 @@ class App extends Component {
 
   render () {
     return <div className='app'>
-      <DelayedTransitions />
+      <Transitions />
       <Transformation />
       <Animation />
     </div>
